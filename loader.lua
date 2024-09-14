@@ -14,7 +14,18 @@ local tpButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
 local plus = Instance.new("TextButton")
-local currentVersion = "1.0.1"
+local console = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Frame_3 = Instance.new("Frame")
+local num1 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local num4 = Instance.new("TextLabel")
+local num2 = Instance.new("TextLabel")
+local num5 = Instance.new("TextLabel")
+local num6 = Instance.new("TextLabel")
+local num3 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local currentVersion = "1.0.2"
 
 --Properties:
 
@@ -66,7 +77,6 @@ Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(0.359389812, 0, 0.368872553, 0)
 Frame_2.Size = UDim2.new(0, 487, 0, 288)
-Frame_2.Visible = false
 
 user.Name = "user"
 user.Parent = Frame_2
@@ -89,7 +99,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.293634504, 0, 0.0465276502, 0)
 TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_2.Font = Enum.Font.Kalam
-TextLabel_2.Text = "Teleport GUI v".. currentVersion
+TextLabel_2.Text = " GUI"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
@@ -100,10 +110,10 @@ tpButton.Parent = Frame_2
 tpButton.BackgroundColor3 = Color3.fromRGB(61, 63, 63)
 tpButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 tpButton.BorderSizePixel = 0
-tpButton.Position = UDim2.new(0.293634504, 0, 0.75, 0)
+tpButton.Position = UDim2.new(0.0677618086, 0, 0.753472209, 0)
 tpButton.Size = UDim2.new(0, 200, 0, 50)
 tpButton.Font = Enum.Font.Unknown
-tpButton.Text = "teleport"
+tpButton.Text = ""
 tpButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 tpButton.TextSize = 14.000
 tpButton.TextWrapped = true
@@ -140,8 +150,150 @@ plus.TextScaled = true
 plus.TextSize = 14.000
 plus.TextWrapped = true
 
+console.Name = "console"
+console.Parent = Frame_2
+console.BackgroundColor3 = Color3.fromRGB(61, 63, 63)
+console.BorderColor3 = Color3.fromRGB(0, 0, 0)
+console.BorderSizePixel = 0
+console.Position = UDim2.new(0.546201229, 0, 0.753472209, 0)
+console.Size = UDim2.new(0, 200, 0, 50)
+console.Font = Enum.Font.Merriweather
+console.Text = "click if broken"
+console.TextColor3 = Color3.fromRGB(255, 255, 255)
+console.TextSize = 14.000
+console.TextWrapped = true
+
+UICorner_2.Parent = console
+
+Frame_3.Parent = console
+Frame_3.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Frame_3.BackgroundTransparency = 0.300
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(-3.28500009, 0, -5.11999989, 0)
+Frame_3.Size = UDim2.new(0, 384, 0, 383)
+Frame_3.Visible = false
+
+num1.Name = "num1"
+num1.Parent = Frame_3
+num1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+num1.BackgroundTransparency = 1.000
+num1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+num1.BorderSizePixel = 0
+num1.Position = UDim2.new(0, 0, 0.154046997, 0)
+num1.Size = UDim2.new(0, 384, 0, 50)
+num1.Font = Enum.Font.Unknown
+num1.Text = "How do you fix this you may be asking, you might have mispelled the persons username or put their display name! Also, they might have left. Please check all of that and it is fixed!"
+num1.TextColor3 = Color3.fromRGB(255, 19, 6)
+num1.TextSize = 14.000
+num1.TextWrapped = true
+
+TextLabel_3.Parent = Frame_3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+TextLabel_3.BackgroundTransparency = 0.500
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0, 384, 0, 50)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "how to fix"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+num4.Name = "num4"
+num4.Parent = Frame_3
+num4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+num4.BackgroundTransparency = 1.000
+num4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+num4.BorderSizePixel = 0
+num4.Position = UDim2.new(0, 0, 0.56657964, 0)
+num4.Size = UDim2.new(0, 384, 0, 50)
+num4.Font = Enum.Font.Unknown
+num4.Text = "If you've done all of that, you can  now, thanks for reading this!"
+num4.TextColor3 = Color3.fromRGB(39, 237, 0)
+num4.TextSize = 14.000
+num4.TextWrapped = true
+
+num2.Name = "num2"
+num2.Parent = Frame_3
+num2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+num2.BackgroundTransparency = 1.000
+num2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+num2.BorderSizePixel = 0
+num2.Position = UDim2.new(0, 0, 0.26631853, 0)
+num2.Size = UDim2.new(0, 384, 0, 50)
+num2.Font = Enum.Font.Unknown
+num2.Text = "If all of that is not working, please contact a developer."
+num2.TextColor3 = Color3.fromRGB(232, 19, 0)
+num2.TextSize = 14.000
+num2.TextWrapped = true
+
+num5.Name = "num5"
+num5.Parent = Frame_3
+num5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+num5.BackgroundTransparency = 1.000
+num5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+num5.BorderSizePixel = 0
+num5.Position = UDim2.new(0, 0, 0.697127938, 0)
+num5.Size = UDim2.new(0, 384, 0, 50)
+num5.Font = Enum.Font.Unknown
+num5.Text = ""
+num5.TextColor3 = Color3.fromRGB(255, 19, 6)
+num5.TextSize = 14.000
+num5.TextWrapped = true
+
+num6.Name = "num6"
+num6.Parent = Frame_3
+num6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+num6.BackgroundTransparency = 1.000
+num6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+num6.BorderSizePixel = 0
+num6.Position = UDim2.new(0, 0, 0.853785872, 0)
+num6.Size = UDim2.new(0, 384, 0, 50)
+num6.Font = Enum.Font.Unknown
+num6.Text = ""
+num6.TextColor3 = Color3.fromRGB(255, 19, 6)
+num6.TextSize = 14.000
+num6.TextWrapped = true
+
+num3.Name = "num3"
+num3.Parent = Frame_3
+num3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+num3.BackgroundTransparency = 1.000
+num3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+num3.BorderSizePixel = 0
+num3.Position = UDim2.new(0, 0, 0.412532628, 0)
+num3.Size = UDim2.new(0, 384, 0, 50)
+num3.Font = Enum.Font.Unknown
+num3.Text = "If all of that doesn't work please don't panic, you can report bugs!"
+num3.TextColor3 = Color3.fromRGB(255, 19, 6)
+num3.TextSize = 14.000
+num3.TextWrapped = true
+
+TextButton_2.Parent = Frame_3
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.908854187, 0, 0.0234986953, 0)
+TextButton_2.Size = UDim2.new(0, 31, 0, 31)
+TextButton_2.Font = Enum.Font.Unknown
+TextButton_2.Text = "X"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
 -- Scripts:
-local function KAOIJJ_fake_script() -- Frame.LocalScript 
+
+local function BAHPMUK_fake_script() -- tpGUI.LocalScript 
+	local script = Instance.new('LocalScript', tpGUI)
+
+	script.Parent.Name = math.random(1,1000000000000)
+end
+coroutine.wrap(BAHPMUK_fake_script)()
+local function RKZZEC_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local ts = game:GetService("TweenService")
@@ -163,8 +315,8 @@ local function KAOIJJ_fake_script() -- Frame.LocalScript
 	script.Parent.TextLabel.Visible = false
 	script.Parent.Frame.Visible = true
 end
-coroutine.wrap(KAOIJJ_fake_script)()
-local function DUUMOU_fake_script() -- Frame_2.Drag 
+coroutine.wrap(RKZZEC_fake_script)()
+local function LFGUIG_fake_script() -- Frame_2.Drag 
 	local script = Instance.new('LocalScript', Frame_2)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -207,8 +359,8 @@ local function DUUMOU_fake_script() -- Frame_2.Drag
 		end
 	end)
 end
-coroutine.wrap(DUUMOU_fake_script)()
-local function OQMPQ_fake_script() -- tpButton.LocalScript 
+coroutine.wrap(LFGUIG_fake_script)()
+local function CHSGA_fake_script() -- tpButton.LocalScript 
 	local script = Instance.new('LocalScript', tpButton)
 
 	local ts = game:GetService("TweenService")
@@ -272,8 +424,8 @@ local function OQMPQ_fake_script() -- tpButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OQMPQ_fake_script)()
-local function DYZBVDH_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(CHSGA_fake_script)()
+local function KCEOJJM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local ts = game:GetService("TweenService")
@@ -292,11 +444,12 @@ local function DYZBVDH_fake_script() -- TextButton.LocalScript
 		script.Parent.Parent.tpButton.Visible = false
 		script.Parent.Parent.user.Visible = false
 		script.Parent.Parent.plus.Visible = true
+		script.Parent.Parent.console.Visible = false
 		script.Parent.Parent.TextLabel.Position = UDim2.new(0.294,0,-0.002,0)
 	end)
 end
-coroutine.wrap(DYZBVDH_fake_script)()
-local function TPDDT_fake_script() -- plus.LocalScript 
+coroutine.wrap(KCEOJJM_fake_script)()
+local function XUDR_fake_script() -- plus.LocalScript 
 	local script = Instance.new('LocalScript', plus)
 
 	local ts = game:GetService("TweenService")
@@ -315,7 +468,24 @@ local function TPDDT_fake_script() -- plus.LocalScript
 		script.Parent.Parent.TextButton.Visible = true
 		script.Parent.Parent.tpButton.Visible = true
 		script.Parent.Parent.user.Visible = true
+		script.Parent.Parent.console.Visible = true
 		script.Parent.Parent.TextLabel.Position = UDim2.new(0.294,0,0.047,0)
 	end)
 end
-coroutine.wrap(TPDDT_fake_script)()
+coroutine.wrap(XUDR_fake_script)()
+local function ZSCS_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ZSCS_fake_script)()
+local function CPHGCBI_fake_script() -- console.LocalScript 
+	local script = Instance.new('LocalScript', console)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Frame.Visible = true
+	end)
+end
+coroutine.wrap(CPHGCBI_fake_script)()
