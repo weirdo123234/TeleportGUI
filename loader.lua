@@ -99,7 +99,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.293634504, 0, 0.0465276502, 0)
 TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_2.Font = Enum.Font.Kalam
-TextLabel_2.Text = " GUI"
+TextLabel_2.Text = "Teleport GUI v".. currentVersion
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
@@ -113,7 +113,7 @@ tpButton.BorderSizePixel = 0
 tpButton.Position = UDim2.new(0.0677618086, 0, 0.753472209, 0)
 tpButton.Size = UDim2.new(0, 200, 0, 50)
 tpButton.Font = Enum.Font.Unknown
-tpButton.Text = ""
+tpButton.Text = "teleport"
 tpButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 tpButton.TextSize = 14.000
 tpButton.TextWrapped = true
@@ -157,7 +157,7 @@ console.BorderColor3 = Color3.fromRGB(0, 0, 0)
 console.BorderSizePixel = 0
 console.Position = UDim2.new(0.546201229, 0, 0.753472209, 0)
 console.Size = UDim2.new(0, 200, 0, 50)
-console.Font = Enum.Font.Merriweather
+console.Font = Enum.Font.Unknown
 console.Text = "click if broken"
 console.TextColor3 = Color3.fromRGB(255, 255, 255)
 console.TextSize = 14.000
@@ -210,7 +210,7 @@ num4.BorderSizePixel = 0
 num4.Position = UDim2.new(0, 0, 0.56657964, 0)
 num4.Size = UDim2.new(0, 384, 0, 50)
 num4.Font = Enum.Font.Unknown
-num4.Text = "If you've done all of that, you can  now, thanks for reading this!"
+num4.Text = "If you've done all of that, you can teleport now, thanks for reading this!"
 num4.TextColor3 = Color3.fromRGB(39, 237, 0)
 num4.TextSize = 14.000
 num4.TextWrapped = true
@@ -287,13 +287,13 @@ TextButton_2.TextWrapped = true
 
 -- Scripts:
 
-local function BAHPMUK_fake_script() -- tpGUI.LocalScript 
+local function HXRG_fake_script() -- tpGUI.LocalScript 
 	local script = Instance.new('LocalScript', tpGUI)
 
 	script.Parent.Name = math.random(1,1000000000000)
 end
-coroutine.wrap(BAHPMUK_fake_script)()
-local function RKZZEC_fake_script() -- Frame.LocalScript 
+coroutine.wrap(HXRG_fake_script)()
+local function EUNBIOS_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local ts = game:GetService("TweenService")
@@ -315,8 +315,8 @@ local function RKZZEC_fake_script() -- Frame.LocalScript
 	script.Parent.TextLabel.Visible = false
 	script.Parent.Frame.Visible = true
 end
-coroutine.wrap(RKZZEC_fake_script)()
-local function LFGUIG_fake_script() -- Frame_2.Drag 
+coroutine.wrap(EUNBIOS_fake_script)()
+local function OXXPS_fake_script() -- Frame_2.Drag 
 	local script = Instance.new('LocalScript', Frame_2)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -359,8 +359,8 @@ local function LFGUIG_fake_script() -- Frame_2.Drag
 		end
 	end)
 end
-coroutine.wrap(LFGUIG_fake_script)()
-local function CHSGA_fake_script() -- tpButton.LocalScript 
+coroutine.wrap(OXXPS_fake_script)()
+local function PTZMTUQ_fake_script() -- tpButton.LocalScript 
 	local script = Instance.new('LocalScript', tpButton)
 
 	local ts = game:GetService("TweenService")
@@ -424,8 +424,8 @@ local function CHSGA_fake_script() -- tpButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CHSGA_fake_script)()
-local function KCEOJJM_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(PTZMTUQ_fake_script)()
+local function ZUCFK_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local ts = game:GetService("TweenService")
@@ -448,8 +448,8 @@ local function KCEOJJM_fake_script() -- TextButton.LocalScript
 		script.Parent.Parent.TextLabel.Position = UDim2.new(0.294,0,-0.002,0)
 	end)
 end
-coroutine.wrap(KCEOJJM_fake_script)()
-local function XUDR_fake_script() -- plus.LocalScript 
+coroutine.wrap(ZUCFK_fake_script)()
+local function NITYIU_fake_script() -- plus.LocalScript 
 	local script = Instance.new('LocalScript', plus)
 
 	local ts = game:GetService("TweenService")
@@ -472,20 +472,20 @@ local function XUDR_fake_script() -- plus.LocalScript
 		script.Parent.Parent.TextLabel.Position = UDim2.new(0.294,0,0.047,0)
 	end)
 end
-coroutine.wrap(XUDR_fake_script)()
-local function ZSCS_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(NITYIU_fake_script)()
+local function QRPXC_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Up:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(ZSCS_fake_script)()
-local function CPHGCBI_fake_script() -- console.LocalScript 
+coroutine.wrap(QRPXC_fake_script)()
+local function RBTCCLQ_fake_script() -- console.LocalScript 
 	local script = Instance.new('LocalScript', console)
 
 	script.Parent.MouseButton1Up:Connect(function()
 		script.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(CPHGCBI_fake_script)()
+coroutine.wrap(RBTCCLQ_fake_script)()
