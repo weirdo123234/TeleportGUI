@@ -11,6 +11,7 @@ local tpButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
 local plus = Instance.new("TextButton")
+local currentVersion = "1.0.1"
 
 --Properties:
 
@@ -46,7 +47,7 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.293634504, 0, 0.0465276502, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.Kalam
-TextLabel.Text = "Teleport GUI"
+TextLabel.Text = "Teleport GUI v".. currentVersion
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
