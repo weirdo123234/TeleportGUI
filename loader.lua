@@ -5,8 +5,11 @@
 
 local tpGUI = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local user = Instance.new("TextBox")
+local thingy = Instance.new("TextLabel")
 local TextLabel = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local user = Instance.new("TextBox")
+local TextLabel_2 = Instance.new("TextLabel")
 local tpButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
@@ -23,11 +26,50 @@ Frame.Parent = tpGUI
 Frame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.359389812, 0, 0.368872553, 0)
-Frame.Size = UDim2.new(0, 487, 0, 288)
+Frame.Position = UDim2.new(0.359000027, 0, 0.369000018, 0)
+Frame.Size = UDim2.new(0, 487, 0, 0)
+
+thingy.Name = "thingy"
+thingy.Parent = Frame
+thingy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+thingy.BackgroundTransparency = 1.000
+thingy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+thingy.BorderSizePixel = 0
+thingy.Position = UDim2.new(0.293634504, 0, 0.413194448, 0)
+thingy.Size = UDim2.new(0, 200, 0, 50)
+thingy.Visible = false
+thingy.Font = Enum.Font.SourceSans
+thingy.Text = "Made by Medium!"
+thingy.TextColor3 = Color3.fromRGB(255, 255, 255)
+thingy.TextScaled = true
+thingy.TextSize = 14.000
+thingy.TextWrapped = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.294, 0, 0.0469999984, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Visible = false
+TextLabel.Font = Enum.Font.Kalam
+TextLabel.Text = "Teleport GUI v".. currentVersion
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.359389812, 0, 0.368872553, 0)
+Frame_2.Size = UDim2.new(0, 487, 0, 288)
+Frame_2.Visible = false
 
 user.Name = "user"
-user.Parent = Frame
+user.Parent = Frame_2
 user.BackgroundColor3 = Color3.fromRGB(86, 87, 87)
 user.BorderColor3 = Color3.fromRGB(0, 0, 0)
 user.BorderSizePixel = 0
@@ -39,22 +81,22 @@ user.Text = ""
 user.TextColor3 = Color3.fromRGB(255, 255, 255)
 user.TextSize = 14.000
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.293634504, 0, 0.0465276502, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.Kalam
-TextLabel.Text = "Teleport GUI v".. currentVersion
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.293634504, 0, 0.0465276502, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Kalam
+TextLabel_2.Text = "Teleport GUI"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
 
 tpButton.Name = "tpButton"
-tpButton.Parent = Frame
+tpButton.Parent = Frame_2
 tpButton.BackgroundColor3 = Color3.fromRGB(61, 63, 63)
 tpButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 tpButton.BorderSizePixel = 0
@@ -68,7 +110,7 @@ tpButton.TextWrapped = true
 
 UICorner.Parent = tpButton
 
-TextButton.Parent = Frame
+TextButton.Parent = Frame_2
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -83,7 +125,7 @@ TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 
 plus.Name = "plus"
-plus.Parent = Frame
+plus.Parent = Frame_2
 plus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 plus.BackgroundTransparency = 1.000
 plus.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -99,9 +141,31 @@ plus.TextSize = 14.000
 plus.TextWrapped = true
 
 -- Scripts:
-
-local function ACIEAB_fake_script() -- Frame.Drag 
+local function KAOIJJ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
+
+	local ts = game:GetService("TweenService")
+	local tinfo = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Linear,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	local numtween1 = ts:Create(script.Parent, tinfo, {Size = UDim2.new(0, 487,0, 288)})
+	numtween1:Play()
+	script.Parent.thingy.Visible = true
+	script.Parent.TextLabel.Visible = true
+	task.wait(1)
+	script.Parent.BackgroundTransparency = 1
+	script.Parent.thingy.Visible = false
+	script.Parent.TextLabel.Visible = false
+	script.Parent.Frame.Visible = true
+end
+coroutine.wrap(KAOIJJ_fake_script)()
+local function DUUMOU_fake_script() -- Frame_2.Drag 
+	local script = Instance.new('LocalScript', Frame_2)
 
 	local UserInputService = game:GetService("UserInputService")
 	
@@ -143,8 +207,8 @@ local function ACIEAB_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(ACIEAB_fake_script)()
-local function EUVB_fake_script() -- tpButton.LocalScript 
+coroutine.wrap(DUUMOU_fake_script)()
+local function OQMPQ_fake_script() -- tpButton.LocalScript 
 	local script = Instance.new('LocalScript', tpButton)
 
 	local ts = game:GetService("TweenService")
@@ -208,8 +272,8 @@ local function EUVB_fake_script() -- tpButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EUVB_fake_script)()
-local function NOEABBL_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(OQMPQ_fake_script)()
+local function DYZBVDH_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local ts = game:GetService("TweenService")
@@ -231,8 +295,8 @@ local function NOEABBL_fake_script() -- TextButton.LocalScript
 		script.Parent.Parent.TextLabel.Position = UDim2.new(0.294,0,-0.002,0)
 	end)
 end
-coroutine.wrap(NOEABBL_fake_script)()
-local function OYFKOXO_fake_script() -- plus.LocalScript 
+coroutine.wrap(DYZBVDH_fake_script)()
+local function TPDDT_fake_script() -- plus.LocalScript 
 	local script = Instance.new('LocalScript', plus)
 
 	local ts = game:GetService("TweenService")
@@ -254,10 +318,4 @@ local function OYFKOXO_fake_script() -- plus.LocalScript
 		script.Parent.Parent.TextLabel.Position = UDim2.new(0.294,0,0.047,0)
 	end)
 end
-coroutine.wrap(OYFKOXO_fake_script)()
-local function UDAZWK_fake_script() -- tpGUI.LocalScript 
-	local script = Instance.new('LocalScript', tpGUI)
-
-	script.Parent.Name = math.random(1,1000000000000)
-end
-coroutine.wrap(UDAZWK_fake_script)()
+coroutine.wrap(TPDDT_fake_script)()
